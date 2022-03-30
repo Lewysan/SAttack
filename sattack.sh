@@ -73,7 +73,7 @@ echo -e "${green}✔ ${gray}Se han escaneado los puertos correctamente."
 echo -e "${gray}Leyendo el archivo ${yellow}target.txt ${gray}que se encuentra en el escritorio.."
 echo " "
 echo -e "${green}---------------------------------${gray}"
-cat ~/Desktop/target.txt
+sleep 5; cat ~/Desktop/target.txt
 echo -e "${green}---------------------------------"
 sleep 5; echo " "; echo -e "${red} Cerrando script.."; sleep 5; rm ~/Desktop/target.txt; clear
 
