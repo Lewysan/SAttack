@@ -2,7 +2,7 @@
 
 Utilizo:
 
-  ./sattack.sh -i <target> -a <tipo_de_ataque>
+  ./sattack.sh -i {target} -a {tipo_de_ataque}
   
 # AVISO:
   Algunas veces se puede necesitar privilegios de root.
