@@ -76,5 +76,5 @@ sleep 4
 echo -e "${green}---------------------------------${gray}"
 cat ~/Desktop/target.txt
 echo -e "${green}---------------------------------"
-sleep 5; echo " "; echo -e "${red} Cerrando script.."; sleep 5; rm ~/Desktop/target.txt; clear
+sleep 5; echo " "; echo -e "${red} Cerrando script.."; sleep 5; rm ~/Desktop/target.txt; clear; exit 0
 
