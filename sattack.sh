@@ -72,7 +72,7 @@ while getopts ":i:p:t:m:s:" o; do
 		  ;;
 		m)
 		  m=${OPTARG}
-		  ((m == "true" || m == "false")) || machineSHelp
+		  ((m == "true" || m == "false")) || helpPanel
 		  ;;
 		s)
 		  s=${OPTARG}
