@@ -47,7 +47,7 @@ UWhite='\033[4;37m'
 
 function helpUsage(){
 clear
-echo -ne "\n${white}———————————————————————————————————————————"
+#echo -ne "\n${white}———————————————————————————————————————————"
 echo -e "${red}"
 figlet -f slant "SAttack"
 echo -e "${BRed}✖ ${white}Uso correcto: ${0} [-i <address>] [-p <port>]"
@@ -55,7 +55,7 @@ echo -e "\t${green}[${yellow}+${green}]${white} i = Address | p = Port"
 echo -e "\n${BYellow}⚠️ ${white}Otro: \n\t${white}Ejemplo de puertos: \n\t\t${yellow}[${red}*${yellow}] ${white}445\n\t\t${yellow}[${red}*${yellow}] ${white}139\n\t\t${yellow}[${red}*${yellow}] ${white}3306\n\t\t${yellow}[${red}*${yellow}] ${white}53\n\t\t${yellow}[${red}*${yellow}] ${white}22\n\t\t${yellow}[${red}*${yellow}] ${white}2222\n\t\t${yellow}[${red}*${yellow}] ${white}2000-65535 ${red}[Minecraft]\n\t\t${yellow}[${red}*${yellow}] ${white}25565 ${red}[Minecraft Localhost]" #\n\t${white}Developers:\n\t\t${yellow}[${red}*${yellow}] ${white}Tyranzx"
 echo -e "\n${BGreen}✔ ${white}Ejemplo: ${0} -i 164.132.119.73 -p 2000-65535"
 echo -e "\t${green}[${yellow}+${green}]${white} Ejemplo de una escala de puertos."
-echo -ne "\n${white}———————————————————————————————————————————\n"
+#echo -ne "\n${white}———————————————————————————————————————————\n"
 exit 1
 }
 
@@ -83,13 +83,13 @@ if [ ${args} -ne 2 ]; then
 	helpUsage
 else
 	clear
-	echo -e "${white}▶———————————————————————————————————————————◀"
+	#echo -e "${white}▶———————————————————————————————————————————◀"
 	echo -e "\n${white} ◆ ${red}Objetivo: ${white}${i}"
 	echo -e "${white} ◆ ${red}Puerto Especificado: ${white}${p}"
-	echo -e "\n${white}▶———————————————————————————————————————————◀${clear}"
+	#echo -e "\n${white}▶———————————————————————————————————————————◀${clear}"
 	sleep 1; echo -e "\n${white}[${green}!${white}]${white} Escaneando puertos.."
 	sleep 3; touch ~/.config/bin/sattack_target; nmap -p ${p} -v -T4 -A ${i} -oG ~/.config/bin/sattack_target &>/dev/null
-	clear
+	#clear
 	sleep 1; echo -e "\n${BGreen}✔ ${white}Se han escaneado los puertos correctamente. Leyendo resultados de ${yellow}~/.config/bin/sattack_target${white}.."
 	sleep 2
 	echo -ne "\n${green}▶———————————————————————————————————————————◀${white}\n\n"
