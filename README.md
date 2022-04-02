@@ -5,8 +5,8 @@
   ./sattack.sh -i {target} -p {port}
   
 - AVISO:
-  1) Algunas veces se puede necesitar privilegios de root.
-  2) Este script ha sido hecho con fines de aprendizaje, no para aportar mucho.
+  - Algunas veces se puede necesitar privilegios de root.
+  - Este script ha sido hecho con fines de aprendizaje, no para aportar mucho.
 
 - CAPTURAS
 
