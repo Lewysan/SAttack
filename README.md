@@ -1,15 +1,14 @@
 # SAttack
 
-Utilizo:
+# UTILIZO:
 
-  ./sattack.sh -i {target} -a {tipo_de_ataque}
+  ./sattack.sh -i {target} -p {port}
   
 # AVISO:
   1) Algunas veces se puede necesitar privilegios de root.
   2) Este script ha sido hecho con fines de aprendizaje, no para aportar mucho.
 
-# USAGE:
-![SAttackUsage](https://user-images.githubusercontent.com/70720366/161389564-c55dce18-e7b3-45ef-be09-d28720b21f32.PNG)
-# ANOTHER SCREENSHOT:
-![sacane](https://user-images.githubusercontent.com/70720366/161389567-4b51ac4f-4246-4442-900e-e4faa8df29bc.PNG)
-![SATcc](https://user-images.githubusercontent.com/70720366/161389570-014f1adb-09d3-462f-b7ac-60b8ef21ef04.PNG)
+# CAPTURAS
+![Sattack](https://user-images.githubusercontent.com/70720366/161397824-d33ce48f-2b3c-44bd-a054-4ebfe4cf26c6.PNG)
+![Scanning](https://user-images.githubusercontent.com/70720366/161397827-a9ba955a-bc8f-4391-81f6-a94ddcb6a502.PNG)
+![Results](https://user-images.githubusercontent.com/70720366/161397828-10ce4d0c-4c38-4498-8c60-b79b2524dd00.PNG)
