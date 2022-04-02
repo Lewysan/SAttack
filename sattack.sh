@@ -46,6 +46,7 @@ UWhite='\033[4;37m'
 # EX: ./sattack.sh -i 164.132.119.73 -p 25565 -t 5 -m true -s minecraft
 
 function helpUsage(){
+clear
 echo -ne "\n${white}———————————————————————————————————————————"
 echo -e "${red}"
 figlet -f slant "SAttack"
