@@ -72,6 +72,8 @@ args=0; while getopts ":i:p:" o; do
 		p)
 		  p=${OPTARG}; let args+=1
 		  ;;
+		*)
+		  helpUsage;;
 	esac
 done
 
