@@ -75,7 +75,7 @@ args=0; while getopts ":i:p:" o; do
 	esac
 done
 
-shift $((OPTIND-1))
+#shift $((OPTIND-1))
 
 if [ ${args} -ne 2 ]; then
 	helpUsage
