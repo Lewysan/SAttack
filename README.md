@@ -10,7 +10,7 @@
 
 - CAPTURAS
 
-![image](https://user-images.githubusercontent.com/70720366/161403493-203b2607-2dc2-479a-8f7e-7eab93fcedac.png)
+![Capture](https://user-images.githubusercontent.com/70720366/161445331-776c34fa-8386-4eb0-9787-92d81a3296b4.PNG)
 
 ![Scanning](https://user-images.githubusercontent.com/70720366/161397827-a9ba955a-bc8f-4391-81f6-a94ddcb6a502.PNG)
 
