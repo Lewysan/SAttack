@@ -38,9 +38,8 @@ echo -e " ▒██████▒▒ ▓█   ▓██▒ ▒██▒ ░   �
 echo -e " ▒ ▒▓▒ ▒ ░ ▒▒   ▓▒█░ ▒ ░░     ▒ ░░    ▒▒   ▓▒█░ ░▒ ▒  ░▒ ▒▒ ▓▒ "
 echo -e " ░ ░▒  ░ ░  ▒   ▒▒ ░   ░        ░      ▒   ▒▒ ░ ░  ▒   ░ ░▒ ▒░ "
 echo -e " ░  ░  ░    ░   ▒    ░        ░        ░   ▒  ░        ░ ░░ ░  "
-echo -e "       ░        ░  ░                       ░  ░ ░      ░  ░    "
-echo -e "                                              ░                "
-echo -e "\n${BRed}✖ ${white}Uso correcto: ${0} [-i <address>] [-p <port>] [-x <other_parameters> (Optional)]"
+echo -e "       ░        ░  ░                       ░  ░ ░      ░  ░    "                                            ░                "
+echo -e "\n\n${BRed}✖ ${white}Uso correcto: ${0} [-i <address>] [-p <port>] [-x <other_parameters> (Optional)]"
 echo -e "\t${green}[${yellow}+${green}]${white} i = Address | p = Port"
 echo -e "\n${BYellow}⚠️ ${white}Otro: \n\t${white}Ejemplo de puertos: \n\t\t${yellow}[${red}*${yellow}] ${white}445\n\t\t${yellow}[${red}*${yellow}] ${white}139"
 echo -e "\t\t${yellow}[${red}*${yellow}] ${white}3306"
@@ -54,10 +53,7 @@ exit 1
 
 trap ctrl_c INT
 
-function ctrl_c(){
-echo " "
-echo -e "${red} Cerrando script.."; sleep 0.5; exit 0
-}
+function ctrl_c(){ echo -e "\n${red} Cerrando script.."; sleep 0.5; exit 0 }
 
 parameter_counter=0; while getopts ":i:p:x:" o; do
 	case "${o}" in
@@ -80,20 +76,17 @@ function atacar(){
 	sleep 3; touch ~/.config/bin/sattack_target; nmap -p ${p} ${i} ${x} -oG ~/.config/bin/sattack_target
         sleep 1; clear
         echo -e "\n${BGreen}✔ ${white}Se han escaneado los puertos correctamente. Leyendo resultados de ${yellow}~/.config/bin/sattack_target${white}.."
-        sleep 2
-        echo -ne "\n${green}▶———————————————————————————————————————————◀${white}\n\n"
+        sleep 2; echo -ne "\n${green}▶———————————————————————————————————————————◀${white}\n\n"
         grep -v ^\# ~/.config/bin/sattack_target | tr '/' ' '; echo -ne "\n${green}▶———————————————————————————————————————————◀\n"; exit 0
 }
 function atacarSinObjetivo(){
-        clear
-        echo -e "\n${white} ◆ ${red}Objetivo: ${white}${i}"
+        clear; echo -e "\n${white} ◆ ${red}Objetivo: ${white}${i}"
         echo -e "${white} ◆ ${red}Puerto Especificado: ${white}${p}\n ${white}◆ ${red}Otro especificado: ${white}${x}"
         sleep 1; echo -e "\n\n${white}[${green}!${white}]${white} Escaneando puertos..\n${clear}"
         sleep 3; touch ~/.config/bin/sattack_target; nmap -p ${p} ${i} -oG ~/.config/bin/sattack_target
         sleep 1; clear
         echo -e "\n${BGreen}✔ ${white}Se han escaneado los puertos correctamente. Leyendo resultados de ${yellow}~/.config/bin/sattack_target${white}.."
-        sleep 2
-        echo -ne "\n${green}▶———————————————————————————————————————————◀${white}\n\n"
+        sleep 2; echo -ne "\n${green}▶———————————————————————————————————————————◀${white}\n\n"
         grep -v ^\# ~/.config/bin/sattack_target | tr '/' ' '; echo -ne "\n${green}▶———————————————————————————————————————————◀\n"; exit 0
 }
 
