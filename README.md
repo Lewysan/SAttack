@@ -2,7 +2,7 @@
 
 - UTILIZO:
 
-  ./sattack.sh -i {target} -p {port}
+  ./sattack.sh -i {target} -p {port} -x {another_parameter}
   
 - AVISO:
   - Algunas veces se puede necesitar privilegios de root.
