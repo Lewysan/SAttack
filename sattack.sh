@@ -32,17 +32,17 @@ BCyan='\033[1;36m'
 BWhite='\033[1;37m'
 
 function helpUsage(){
-clear; echo -e "${red}"
-echo -e "┌─┐┌─┐┌┬┐┌┬┐┌─┐┌─┐┬┌─"
-echo -e "└─┐├─┤ │  │ ├─┤│  ├┴┐"
+clear; echo -e "${magenta}"
+echo -e "┌─┐┌─┐┌┬┐┌┬┐┌─┐┌─┐┬┌─${purple}"
+echo -e "└─┐├─┤ │  │ ├─┤│  ├┴┐  ${white}→ by Tyranzx${magenta}"
 echo -e "└─┘┴ ┴ ┴  ┴ ┴ ┴└─┘┴ ┴"
 echo -e "\n${BRed}✖ ${white}Uso correcto: ${0} [-i <address>] [-p <port>] [-x <other_parameters> (Optional)]"
 echo -e "\t${green}[${yellow}+${green}]${white} i = Address | p = Port"
 echo -e "\n${BYellow}⚠️ ${white}Otro: \n\t${white}Ejemplo de puertos: \n\t\t${yellow}[${red}*${yellow}] ${white}445\n\t\t${yellow}[${red}*${yellow}] ${white}139"
 echo -e "\t\t${yellow}[${red}*${yellow}] ${white}3306"
 echo -e "\t\t${yellow}[${red}*${yellow}] ${white}53\n\t\t${yellow}[${red}*${yellow}] ${white}22\n\t\t${yellow}[${red}*${yellow}] ${white}2222"
-echo -e "\t\t${yellow}[${red}*${yellow}] ${white}2000-65535 ${red}[Minecraft]"
-echo -e "\t\t${yellow}[${red}*${yellow}] ${white}25565 ${red}[Minecraft Localhost]"
+echo -e "\t\t${yellow}[${red}*${yellow}] ${white}2000-65535 ${purple}[Minecraft]"
+echo -e "\t\t${yellow}[${red}*${yellow}] ${white}25565 ${purple}[Minecraft Localhost]"
 echo -e "\n${BGreen}✔ ${white}Ejemplo: ${0} -i 164.132.119.73 -p 2000-65535 -x '-v -A -T4'" 
 echo -e "\t${green}[${yellow}+${green}]${white} Ejemplo de una escala de puertos."
 exit 1
@@ -69,10 +69,25 @@ done
 
 function atacar(){
 	clear
+	echo -e "\n${red}"
+echo "┌─┐┌─┐┌─┐┌┐┌┌┐┌┬┌┐┌┌─┐  "
+echo "└─┐│  ├─┤│││││││││││ ┬  "
+echo "└─┘└─┘┴ ┴┘└┘┘└┘┴┘└┘└─┘oo"
         echo -e "\n${white} ◆ ${red}Objetivo: ${white}${i}"
         echo -e "${white} ◆ ${red}Puerto Especificado: ${white}${p}\n ${white}◆ ${red}Otro especificado: ${white}${x}"
-        sleep 1; echo -e "\n\n${white}[${green}!${white}]${white} Escaneando puertos..\n${clear}"
-	sleep 3; touch ~/.config/bin/sattack_target; nmap -p ${p} ${i} ${x} -oG ~/.config/bin/sattack_target
+	sleep 1; clear; echo -e "\n${red}"
+echo "┌─┐┌─┐┌─┐┌┐┌┌┐┌┬┌┐┌┌─┐  "
+echo "└─┐│  ├─┤│││││││││││ ┬  "
+echo "└─┘└─┘┴ ┴┘└┘┘└┘┴┘└┘└─┘o"
+        echo -e "\n${white} ◆ ${red}Objetivo: ${white}${i}"
+        echo -e "${white} ◆ ${red}Puerto Especificado: ${white}${p}\n ${white}◆ ${red}Otro especificado: ${white}${x}"
+sleep 1; clear; echo -e "\n${red}"
+echo "┌─┐┌─┐┌─┐┌┐┌┌┐┌┬┌┐┌┌─┐  "
+echo "└─┐│  ├─┤│││││││││││ ┬  "
+echo -e "└─┘└─┘┴ ┴┘└┘┘└┘┴┘└┘└─┘oo"
+        echo -e "\n${white} ◆ ${red}Objetivo: ${white}${i}"
+        echo -e "${white} ◆ ${red}Puerto Especificado: ${white}${p}\n ${white}◆ ${red}Otro especificado: ${white}${x}\n${clear}"
+sleep 3; touch ~/.config/bin/sattack_target; nmap -p ${p} ${i} ${x} -oG ~/.config/bin/sattack_target
         sleep 1; echo -e "\n${BGreen}✔ ${white}Se han escaneado los puertos correctamente. Leyendo resultados de ${yellow}~/.config/bin/sattack_target${white}.."
         sleep 2
         echo -ne "\n${green}▶———————————————————————————————————————————◀${white}\n\n"
@@ -80,9 +95,24 @@ function atacar(){
 }
 function atacarSinObjetivo(){
 	clear
+        echo -e "\n${red}"
+echo "┌─┐┌─┐┌─┐┌┐┌┌┐┌┬┌┐┌┌─┐  "
+echo "└─┐│  ├─┤│││││││││││ ┬  "
+echo "└─┘└─┘┴ ┴┘└┘┘└┘┴┘└┘└─┘oo"
         echo -e "\n${white} ◆ ${red}Objetivo: ${white}${i}"
         echo -e "${white} ◆ ${red}Puerto Especificado: ${white}${p}\n ${white}◆ ${red}Otro especificado: ${white}${x}"
-        sleep 1; echo -e "\n\n${white}[${green}!${white}]${white} Escaneando puertos..\n${clear}"
+        sleep 1; clear; echo -e "\n${red}"
+echo "┌─┐┌─┐┌─┐┌┐┌┌┐┌┬┌┐┌┌─┐  "
+echo "└─┐│  ├─┤│││││││││││ ┬  "
+echo "└─┘└─┘┴ ┴┘└┘┘└┘┴┘└┘└─┘o"
+        echo -e "\n${white} ◆ ${red}Objetivo: ${white}${i}"
+        echo -e "${white} ◆ ${red}Puerto Especificado: ${white}${p}\n ${white}◆ ${red}Otro especificado: ${white}${x}"
+sleep 1; clear; echo -e "\n${red}"
+echo "┌─┐┌─┐┌─┐┌┐┌┌┐┌┬┌┐┌┌─┐  "
+echo "└─┐│  ├─┤│││││││││││ ┬  "
+echo -e "└─┘└─┘┴ ┴┘└┘┘└┘┴┘└┘└─┘oo"
+        echo -e "\n${white} ◆ ${red}Objetivo: ${white}${i}"
+        echo -e "${white} ◆ ${red}Puerto Especificado: ${white}${p}\n ${white}◆ ${red}Otro especificado: ${white}${x}\n${clear}"
         sleep 3; touch ~/.config/bin/sattack_target; nmap -p ${p} ${i} -oG ~/.config/bin/sattack_target
         sleep 1; echo -e "\n\n${BGreen}✔ ${white}Se han escaneado los puertos correctamente. Leyendo resultados de → ${yellow}~/.config/bin/sattack_target${white}.."
         sleep 2
