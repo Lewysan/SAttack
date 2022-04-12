@@ -10,10 +10,6 @@
 
 - CAPTURAS
 
-![Capture](https://user-images.githubusercontent.com/70720366/161445331-776c34fa-8386-4eb0-9787-92d81a3296b4.PNG)
+![Capture](https://user-images.githubusercontent.com/70720366/163052992-957d67ec-b50a-4e9a-9ee8-e71a44e5c8ce.PNG)
 
-![Scanning](https://user-images.githubusercontent.com/70720366/161397827-a9ba955a-bc8f-4391-81f6-a94ddcb6a502.PNG)
-
-![Results](https://user-images.githubusercontent.com/70720366/161397828-10ce4d0c-4c38-4498-8c60-b79b2524dd00.PNG)
-
-![Rx](https://user-images.githubusercontent.com/70720366/161397910-48fb673e-9ec8-4ea5-8c1e-f9b2a3f0d642.PNG)
+![scanning](https://user-images.githubusercontent.com/70720366/163053054-3e980aa6-1943-46ed-92e3-52b4b9976206.PNG)
